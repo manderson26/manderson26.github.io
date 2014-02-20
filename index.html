@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Occasional Writings</title>
+  <meta name="author" content="Mark Anderson">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="Blog Archives Recent Posts GitHub Repos Status updating&#8230; @manderson26 on GitHub $(document).ready(function(){ if (!window.jXHR){ var jxhr = &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://manderson26.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Occasional Writings" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -29,6 +29,8 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" />
+<link rel="openid2.local_id" href="http://www.google.com/profiles/112042755166036667973" />
 
   
 
@@ -36,9 +38,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">Occasional Writings</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>A blog</h2>
   
 </hgroup>
 
@@ -81,6 +83,35 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/manderson26">@manderson26</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'manderson26',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
 
 
 
@@ -91,7 +122,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Your Name -
+  Copyright &copy; 2014 - Mark Anderson -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
